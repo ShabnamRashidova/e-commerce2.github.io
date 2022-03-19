@@ -1,0 +1,55 @@
+#feature {
+  margin: 70px 0;
+  .feature-container {
+    padding: 0 40px !important;
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-4,
+    .item-5 {
+      position: relative;
+      margin: 0 0 20px 0;
+      padding: 0 10px 0 10px;
+      .img-content {
+        .image {
+          overflow: hidden;
+          a {
+            img {
+              width: 100%;
+              transition: $general-transition;
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+      }  
+        .categoty-title {
+          text-transform: uppercase;
+          font-weight: 500;
+          position: absolute;
+          bottom: 15px;
+          left: 40px;
+          color: #323232;
+          font-size: 30px;
+        }
+      
+    }
+    .item-1 {
+      img {
+        height: 53% !important;
+      }
+    }
+    .item-2,
+    .item-3,
+    .item-4,
+    .item-5 {
+      img {
+        height: 25% !important;
+      }
+      .categoty-title {
+        font-size: 20px;
+      }
+    }
+  }
+}

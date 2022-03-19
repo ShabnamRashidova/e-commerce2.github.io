@@ -1,0 +1,102 @@
+.trends {
+  .container {
+    max-width: 1200px;
+    .trends-item {
+      border: 1px solid #ddd;
+      .blog-post {
+        .article-inner {
+          transition: $general-transition;
+          &:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          }
+          &:hover {
+            .post-img {
+              overflow: hidden;
+              img {
+                transform: scale(1.1);
+                overflow: hidden;
+              }
+            }
+          }
+          .entry-header {
+            position: relative;
+            .entry-thumbnail {
+              .post-img {
+                overflow: hidden;
+                img {
+                  transition: $general-transition;
+                }
+              }
+              .post-date {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                background-color: #fff;
+                padding: 2px 15px;
+                @include center;
+                flex-direction: column;
+                .post-day {
+                  font-size: 24px;
+                }
+                .post-month {
+                  font-size: 14px;
+                  text-transform: uppercase;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+          .article-body-container {
+            padding: 0 20px 20px;
+            text-align: center;
+            .categories {
+              transform: translateY(-12px);
+              a {
+                padding: 0;
+                color: #fff;
+                font-size: 13px;
+                text-transform: uppercase;
+                display: inline-block;
+                width: 230px;
+                background-color: $green;
+              }
+            }
+            .post-title {
+              a {
+                color: #333;
+                font-size: 26px;
+              }
+            }
+            .author {
+              margin-bottom: 10px;
+              a {
+                display: flex;
+                justify-content: center;
+                color: #a4a4a4;
+                font-size: 14px;
+                img {
+                  display: inline-block;
+                  margin: 0 10px;
+                  width: 22px;
+                  border-radius: 50%;
+                }
+              }
+            }
+            .content {
+              p {
+                font-size: 14px;
+                color: #777777;
+                &.read-more-section {
+                  a {
+                    text-transform: uppercase;
+                    color: $green;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.newsletter{
+    border-bottom: 1px solid #E6E6E6;
+padding: 40px 0;
+    .newsletter-inner{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .newsletter-title{
+            color: #333;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        form{
+            input{
+                border:2px solid #E6E6E6;
+                width: 350px;
+                height: 40px;
+                padding-left: 10px;
+                &::placeholder{
+                    font-size: 14px;
+                    color: #777;
+                }
+            }
+            button{
+                background-color: #6CA300;
+                height: 42px;
+                width: 100px;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 16px;
+               
+            }
+            small{
+                margin-top: 30px;
+                display: inline-block;
+                color: #747474;
+                a{
+                    color: #242424;
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.footer-container {
+  background-color: #fff;
+  .container {
+    max-width: 1200px;
+    .footer-sidebar {
+      .widget-title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0 0 10px;
+      }
+      padding: 40px 0 10px;
+      margin: 0 -15px 0;
+      border-bottom: 1px solid #e4e4e4;
+      .footer-column {
+        margin-bottom: 30px;
+        &.footer-column-1 {
+          .footer-column-inner {
+            .logo {
+              img {
+                width: 200px;
+              }
+            }
+            .text {
+              color: #777;
+              line-height: 1.7;
+              font-size: 13px;
+              margin: 10px 0;
+              width: 280px;
+            }
+            .address {
+              li {
+                margin-bottom: 8px;
+                span {
+                  font-size: 14px;
+                  color: #777;
+                  display: inline-block;
+                  margin: 0 5px;
+                }
+              }
+            }
+          }
+        }
+        &.footer-column-2 {
+          .woodmart-recent-posts {
+            .woodmart-recent-posts-list {
+              .recent-post-info {
+                margin-left: 10px;
+                .small-title {
+                  color: #333333;
+                  font-weight: 500;
+                  font-size: 15px;
+                  display: block;
+                }
+                .recent-posts-time,
+                .recent-posts-comment {
+                  font-size: 12px;
+                  color: #cabbbb;
+                }
+              }
+            }
+          }
+        }
+        &.footer-column-3,
+        &.footer-column-4,
+        &.footer-column-5 {
+          .menu {
+            li {
+              margin-bottom: 10px;
+              a {
+                display: inline-block;
+                font-size: 14px;
+                font-weight: 400;
+                color: #6e6d6e;
+                transition: 0.4s ease;
+                &:hover {
+                  transform: translateX(5px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.min-footer {
+      padding: 20px 0;
+      .copyrights {
+        .col-left {
+          small {
+            font-size: 14px;
+            a {
+              color: #000;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}

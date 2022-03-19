@@ -1,0 +1,106 @@
+
+.products {
+  .container {
+    max-width: 1240px;
+    .product-item {
+      overflow: hidden;
+      width: 270px;
+
+      position: relative;
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      &:hover {
+        .product-info {
+          margin-top: 30px;
+        }
+        .product-bottom {
+          opacity: 1;
+          z-index: 100;
+        
+        }
+      }
+      .product-image {
+        cursor: pointer;
+        height: 270px;
+        width: 270px;
+        overflow: hidden;
+        transition: 2s ease;
+        background-repeat: no-repeat;
+        img{
+          width: 100%;
+        }
+        &:hover {
+          transform: scale(1.1);
+          background-repeat: no-repeat;
+        }
+        
+      }
+      .percent {
+        background-color: $green;
+        color: #fff;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        @include center;
+        text-transform: uppercase;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      .product-info {
+        padding: 20px 0;
+        text-align: center;
+        .product-title {
+          font-size: 14px;
+        }
+        .name {
+          font-size: 13px;
+          color: #777;
+        }
+        .price {
+          margin-top: 5px;
+          color: $green;
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+      .product-bottom {
+        opacity: 0;
+        padding:0 20px 20px;
+        text-align: center;
+        transition: $general-transition;
+        .desc {
+          color: #777;
+          font-size: 13px;
+        }
+        .buttons {
+          @include center;
+          .view {
+            transition: $general-transition;
+            &:hover {
+              background-color: $green;
+              a {
+                color: #fff;
+              }
+            }
+            margin: 0 20px;
+            background-color: #fff;
+            border: 1px solid $green;
+            padding: 5px 10px;
+            a {
+              color: $green;
+            }
+          }
+          .search,
+          .wishlist {
+            i {
+              font-size: 22px;
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+  }
+}
